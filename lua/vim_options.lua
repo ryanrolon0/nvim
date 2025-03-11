@@ -34,7 +34,7 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>tn', ':tabnew<CR>')
 vim.keymap.set('n', '<leader>tc', ':tabclose<CR>')
 
-vim.keymap.set('i', ';;', '<Esc>')
+vim.keymap.set('i', 'jj', '<Esc>')
 --Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
