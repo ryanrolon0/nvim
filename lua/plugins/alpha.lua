@@ -27,10 +27,10 @@ return {
 
 		dashboard.section.buttons.val = {
 			dashboard.button("n", "   New file", ":ene <BAR> startinsert <CR>"),
-			dashboard.button("f", "󰮗   Find file", ":cd $HOME | Telescope find_files<CR>"),
-			dashboard.button("e", "   File Explorer", ":cd $HOME | Neotree<CR>"),
+			dashboard.button("f", "󰮗   Find file", ":Telescope find_files<CR>"),
+			dashboard.button("e", "   File Explorer", ":Neotree<CR>"),
 			dashboard.button("r", "   Recent", ":Telescope oldfiles<CR>"),
-			dashboard.button("c", "   Configuration", ":e ~/.config/nvim/lua/user/config.lua<CR>"),
+			dashboard.button("c", "   Configuration", ":e ~/.config/nvim/lua/vim_options.lua<CR>"),
 			dashboard.button("R", "󱘞   Ripgrep", ":Telescope live_grep<CR>"),
 			dashboard.button("q", "󰗼   Quit", ":qa<CR>"),
 		}
@@ -43,7 +43,8 @@ return {
 		end
 
 		dashboard.section.footer.val = {
-			centerText("Never let grades define u", 50),
+			centerText("God, he'll give us what we need,", 50),
+            centerText("it may not be what we want. On Sight, K.W", 50),
 			" ",
 			-- centerText("NvimOnMy_Way❤️", 50),
 			-- " ",

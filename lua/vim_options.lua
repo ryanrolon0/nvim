@@ -8,7 +8,7 @@ vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.autoread = true
 vim.opt.mouse="a"
-vim.opt.encoding = "utf8"
+vim.opt.encoding = "utf-8"
 vim.opt.clipboard = "unnamedplus"
 vim.opt.autoindent = true
 vim.opt.smartindent = true
@@ -31,10 +31,15 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
+-- Tab keymaps
 vim.keymap.set('n', '<leader>tn', ':tabnew<CR>')
 vim.keymap.set('n', '<leader>tc', ':tabclose<CR>')
+vim.keymap.set('n', '<leader>tl', ':tabNext<CR>')
+vim.keymap.set('n', '<leader>th', ':tabprevious<CR>')
 
 vim.keymap.set('i', 'jj', '<Esc>')
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
+
 --Line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
