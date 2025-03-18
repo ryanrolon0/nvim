@@ -8,7 +8,9 @@ return {
 				null_ls.builtins.formatting.prettier,
 				null_ls.builtins.formatting.black,
 				null_ls.builtins.formatting.isort,
-                null_ls.builtins.formatting.clang_format,
+                null_ls.builtins.formatting.clang_format.with({
+                    extra_args = { "-style={BasedOnStyle: LLVM, IndentWidth: 4, TabWidth: 4, UseTab: Never}" },
+                }),
 			},
 		})
 
