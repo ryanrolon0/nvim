@@ -37,8 +37,13 @@ vim.keymap.set('n', '<leader>tc', ':tabclose<CR>')
 vim.keymap.set('n', '<leader>tl', ':tabNext<CR>')
 vim.keymap.set('n', '<leader>th', ':tabprevious<CR>')
 
+-- Quality of life mappings
 vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
+
+-- o and O without entering insert mode
+vim.keymap.set("n", "o", "o<Esc>", { noremap = true })
+vim.keymap.set("n", "O", "O<Esc>", { noremap = true })
 
 --Line numbers
 vim.opt.number = true
