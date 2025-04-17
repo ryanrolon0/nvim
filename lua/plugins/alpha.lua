@@ -58,7 +58,6 @@ return {
             " ",
             -- centerText("NvimOnMy_Way❤️", 50),
             -- " ",
-            centerText(version, 50),
         }
 
         -- Send config to alpha
