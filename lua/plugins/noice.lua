@@ -22,5 +22,9 @@ return {
 				lsp_doc_border = false,
 			},
 		})
+
+		require("notify").setup({
+			background_colour = "#1e1e2e", -- A Catppuccin Macchiato-friendly dark tone
+		})
 	end,
 }
