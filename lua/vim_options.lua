@@ -34,11 +34,12 @@ vim.keymap.set('n', '<leader>nh', ':nohlsearch<CR>')
 -- Tab keymaps
 vim.keymap.set('n', '<leader>tn', ':tabnew<CR>')
 vim.keymap.set('n', '<leader>tc', ':tabclose<CR>')
-vim.keymap.set('n', '<leader>tl', ':tabNext<CR>')
-vim.keymap.set('n', '<leader>th', ':tabprevious<CR>')
+vim.keymap.set('n', '<leader>tl', ':tabn<CR>')
+vim.keymap.set('n', '<leader>th', ':tabp<CR>')
 
 -- Quality of life mappings
 vim.keymap.set('i', 'jj', '<Esc>')
+vim.keymap.set('i', 'JJ', '<Esc>')
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>d", ":Alpha<CR>", { noremap = true, silent = true })
 
