@@ -54,7 +54,7 @@ return {
 
         dashboard.section.footer.val = {
             centerText("God, he'll give us what we need,", 50),
-            centerText("it may not be what we want. On Sight, K.W", 50),
+            centerText("it may not be what we want.", 50),
             " ",
             -- centerText("NvimOnMy_Way❤️", 50),
             -- " ",
